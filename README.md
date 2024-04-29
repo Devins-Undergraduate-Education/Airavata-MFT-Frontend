@@ -42,4 +42,4 @@ npm run dev
 ## Unsupported Features
 - Add Storages
 
-<br><br><br>*By: Ganning Xu*
+<br><br><br>*Contributions from Ganning Xu aided this project - we are thankful!*
