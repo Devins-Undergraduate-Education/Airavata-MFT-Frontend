@@ -31,19 +31,19 @@ export default function Home()
       <Container maxW='container.2xl' p={4}>
         <Box textAlign='center' maxW='600px' mx='auto'>
           <Heading fontWeight='black' fontSize='5xl'>
-            Airavata MFT <Text as='span' color='blue.400'>Browser</Text>
+            Airavata MFT <Text as='span' color='darkgreen'>Browser</Text>
           </Heading>
 
-          <Text mt={4}>A local user interface for Apache Airavata Managed File Transfers (MFT). Note: <Text as='span' fontWeight='bold'>this MFT Browser relies on the backend being set up</Text>. You can setup the backend locally by following the instructions <Link href="https://github.com/ganning127/mft-ui-backend" color='blue.400'>in this repository</Link>. You will also need to have Airavata MFT installed and running locally on your computer already for this to work.</Text>
+          <Text mt={4}> Welcome to a local application of Apache Airavata Managed File Transfers. This application allows users to interact with MFT and </Text>
 
           <Text fontSize='lg' fontWeight='bold' mt={8}>How It Works</Text>
-          <Text>This ElectronJS and NextJS application was written by Ganning Xu to allow users to browse files in their MFT storages in a user interface. The ElectronJS application serves as the frontend, while the backend repository linked above serves as middleware between this frontend and the actual MFT GRPC API.</Text>
+          <Text>This application was written by Devin, Sagor, and Ameerah to permit users to navigate through files in MFT storages. The application combines both a frontend which creates a graphical interface that is functional and easy to use along with the backend which creates a connection between your local system and the application. The backend was inspired by the work and contributions of Ganning Xi and Dimuthu Wannipurage.  </Text>
 
           <Text fontSize='lg' fontWeight='bold' mt={8}>Features</Text>
-          <Text>Currently, the following features are fully functional: listing storages, listing files within storages, browsing files within storages. The following functionalities are still in development: adding storages, moving/copying files, downloading files.</Text>
+          <Text>Right now, you can list storages, view files within them, and browse through those files. However, adding storages, moving or copying files, and downloading files are still in progress.</Text>
 
 
-          {/* <Button as='a' href='/list-storages' colorScheme='blue' mt={4}>Get Started</Button> */}
+          {/* <Button as='a' href='/list-storages' colorScheme='darkgreen' mt={4}>Get Started</Button> */}
         </Box>
 
       </Container >
