@@ -103,7 +103,7 @@ const LinuxMacOS = () => {
         <>
             <h1>Under Construction</h1>
             <ol>
-                <li>Download Apache Airavata for MacOS from the official website.</li>
+                <li>Download Apache Airavata for MacOS from the GitHub.</li>
                 <li>Run the installer and follow the on-screen instructions.</li>
                 <li>Set up a default virtual environment using at least python3.10+ and Java11+.</li>
                 <li>Open Terminal and execute the following commands:</li>
