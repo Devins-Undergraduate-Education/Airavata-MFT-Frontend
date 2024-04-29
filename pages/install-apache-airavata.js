@@ -112,7 +112,7 @@ const LinuxMacOS = () => {
                 <li>sudo apt install python3-pip</li>
                 <li>sudo apt install default-jre</li>
                 <li>python3.10 -m venv venv</li>
-                <li>source venv/bin/activate</li>
+                <li>source venv/bin/ate</li>
                 <li>pip install airavata-mft-cli</li>
                 <li>mfi init (starts mft)</li>
             </ol>
