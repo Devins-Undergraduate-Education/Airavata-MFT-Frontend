@@ -18,7 +18,7 @@ export const NavBar = () => {
             fontWeight: 'extrabold',
           },
         }}>
-          <Link href='/'>Home</Link>
+          <Link href='/'>FAQs</Link>
           <Link href='/install-apache-airavata'>Installation</Link>
           <Link href='/list-storages'>List Storages</Link>
           <Link href='/add-storage'>Add Storage</Link>
