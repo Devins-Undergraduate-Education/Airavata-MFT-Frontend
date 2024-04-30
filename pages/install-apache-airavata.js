@@ -1,35 +1,14 @@
-import { useEffect, useState } from 'react';
-import { Field, FieldArray, Form, Formik } from 'formik';
+
 import {
-    Button,
-    Text,
-    Table,
-    Alert,
-    AlertIcon,
     Heading,
     Container,
-    Badge,
     Box,
     Flex,
-    Modal,
-    ModalOverlay,
-    ModalContent,
-    ModalHeader,
-    ModalFooter,
-    ModalBody,
-    ModalCloseButton,
-    FormControl,
-    FormLabel,
-    FormErrorMessage,
-    FormHelperText,
-    Input,
-    SimpleGrid,
     Tabs,
     TabList,
     TabPanels,
     Tab,
     TabPanel,
-    Switch
 } from '@chakra-ui/react';
 import { NavBar } from '../components/NavBar';
 
@@ -93,6 +72,18 @@ const Windows = () => {
                     <li>Install Apache Airavata via <b>pip install airavata-mft-cli</b></li>
                     <li>Start Apache Airavata MFT via <b>mft init</b></li>
                 </ol>
+                <br /><br />
+            </Box>
+            If the MFT server is unable to be started via <b>mft init</b>, there may be an instance<br />
+            of MFT already running. To resolve this issue, run the following commands:<br />
+            <Box marginLeft='30px'>
+                <ul>
+                    <b>
+                        <li>cd ~/.mft/Standalone-Service-0.01/bin</li>
+                        <li>./standalone-service-daemon.sh stop</li>
+                        <li>./standalone-service-daemon.sh start</li>
+                    </b>
+                </ul>
             </Box>
         </>
     );
@@ -101,21 +92,35 @@ const Windows = () => {
 const LinuxMacOS = () => {
     return (
         <>
-            <h1>Under Construction</h1>
-            <ol>
-                <li>Download Apache Airavata for MacOS from the GitHub.</li>
-                <li>Run the installer and follow the on-screen instructions.</li>
-                <li>Set up a default virtual environment using at least python3.10+ and Java11+.</li>
-                <li>Open Terminal and execute the following commands:</li>
-                <li>python3.10 -m venv venv</li>
-                <li>source venv/bin/activate</li>
-                <li>pip install airavata-mft-cli</li>
-                <li>mfi init (starts mft)</li>
-                <li>If mft server is unavailable run the following commands</li>
-                <li>cd ~/.mft/Standalone-Service-0.01/bin
-                    ./standalone-service-daemon.sh stop</li>
-                <li>./standalone-service-daemon.sh start</li>
-            </ol>
+            <h1>Installation Steps for Linux / MacOS</h1>
+            <br />
+            The GitHub for Apache Airavata provides detailed instructions for installation <br />
+            on Linus and MacOS devices. It is highly recommend to start there. <br /><br />
+            <Box marginLeft='20px'>
+                <ol>
+                    <li>cd into project file directory</li>
+                    <i>To find the current position within a directory, type <b>ls</b></i>
+                    <br />
+                    <i>To go back one directory, type <b>cd..</b></i>
+                    <li>Create a python virtual environment via <b>python3.10 -m venv venv</b></li>
+                    <li>Activate the virtual environment via <b>source venv/bin/activate</b></li>
+                    <li>Install Apache Airavata via <b>pip install airavata-mft-cli</b></li>
+                    <li>Start Apache Airavata MFT via <b>mft init</b></li>
+                </ol>
+
+                <br /><br />
+            </Box>
+            If the MFT server is unable to be started via <b>mft init</b>, there may be an instance<br />
+            of MFT already running. To resolve this issue, run the following commands:<br />
+            <Box marginLeft='30px'>
+                <ul>
+                    <b>
+                        <li>cd ~/.mft/Standalone-Service-0.01/bin</li>
+                        <li>./standalone-service-daemon.sh stop</li>
+                        <li>./standalone-service-daemon.sh start</li>
+                    </b>
+                </ul>
+            </Box>
         </>
     );
 };
