@@ -39,14 +39,14 @@ export default function AddStorage()
 
                 <Tabs mt={8} variant='unstyled'>
                     <TabList>
-                        <Tab rounded='md' _selected={{ color: 'white', bg: 'yellow.500' }}>SCP</Tab>
-                        <Tab rounded='md' _selected={{ color: 'white', bg: 'purple.400' }}>S3</Tab>
+                        <Tab rounded='md' _selected={{ color: 'white', bg: '#CBA367' }}>SCP</Tab>
+                        <Tab rounded='md' _selected={{ color: 'white', bg: '#C1666B' }}>S3</Tab>
                     </TabList>
                     <TabPanels>
-                        <TabPanel bg='yellow.50' p={4} rounded='md'>
+                        <TabPanel bg='#E5D1B3' p={4} rounded='md'>
                             <SCPForm />
                         </TabPanel>
-                        <TabPanel bg='purple.50' p={4} rounded='md'>
+                        <TabPanel bg='#E2B6B8' p={4} rounded='md'>
                             <S3Form />
                         </TabPanel>
                     </TabPanels>
@@ -148,12 +148,16 @@ const SCPForm = () =>
                         </SimpleGrid>
                         <Button
                             mt={4}
-                            colorScheme='yellow'
+                            variant='solid'
+                            bg='#CBA367'
+                            color='white'
+                            _hover={{ bg: '#B6863E' }} 
                             isLoading={props.isSubmitting}
                             type='submit'
                         >
                             Submit
                         </Button>
+
                     </Form>
                 )}
             </Formik>
@@ -208,21 +212,24 @@ const S3Form = () =>
 
                             <FormControl>
                                 <FormLabel>Session Token?</FormLabel>
-                                <Switch isChecked={isSessionToken}
-                                    onChange={() => setIsSessionToken(!isSessionToken)} colorScheme='purple' />
+                                <Switch 
+                                    isChecked={isSessionToken}
+                                    onChange={() => setIsSessionToken(!isSessionToken)} 
+                                    colorScheme='red' 
+                                />
                             </FormControl>
 
                             <FormControl>
                                 <FormLabel>AWS S3 Bucket?</FormLabel>
                                 <Switch isChecked={isS3Bucket}
-                                    onChange={() => setIsS3Bucket(!isS3Bucket)} colorScheme='purple' />
+                                    onChange={() => setIsS3Bucket(!isS3Bucket)} colorScheme='red' />
                             </FormControl>
 
                         </SimpleGrid>
 
                         <Button
                             mt={4}
-                            colorScheme='purple'
+                            colorScheme='red'
                             isLoading={props.isSubmitting}
                             type='submit'
                         >
