@@ -1,4 +1,3 @@
-
 import {
     Heading,
     Container,
@@ -18,18 +17,18 @@ export default function InstallApacheAiravata() {
             <NavBar />
             <Container maxW='container.2xl' p={4}>
                 <Flex justify='space-between' alignItems='center'>
-                    <Heading color='blue.600' size='lg'>Installing Apache Airavata</Heading>
+                    <Heading color='#2E4660' size='lg'>Installing Apache Airavata</Heading>
                 </Flex>
                 <Tabs mt={8} variant='unstyled'>
                     <TabList>
-                        <Tab rounded='md' _selected={{ color: 'white', bg: '#7B506F' }}>Windows</Tab>
-                        <Tab rounded='md' _selected={{ color: 'white', bg: '#6957B2' }}>Linux / MacOS</Tab>
+                        <Tab rounded='md' _selected={{ color: 'white', bg: '#F47C66' }}>Windows</Tab>
+                        <Tab rounded='md' _selected={{ color: 'white', bg: '#21B9E8' }}>Linux / MacOS</Tab>
                     </TabList>
                     <TabPanels>
-                        <TabPanel bg='#E7DAE3' p={4} rounded='md'>
+                        <TabPanel bg='#FCDED9' p={4} rounded='md'>
                             <Windows />
                         </TabPanel>
-                        <TabPanel bg='#E6E3F2' p={4} rounded='md'>
+                        <TabPanel bg='#B6E8F7' p={4} rounded='md'>
                             <LinuxMacOS />
                         </TabPanel>
                     </TabPanels>
