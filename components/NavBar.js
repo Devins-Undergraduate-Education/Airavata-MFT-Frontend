@@ -1,34 +1,29 @@
-import { Box, Flex, Link, Text } from '@chakra-ui/react';
+import { Box, Flex, Link, Text, Heading } from '@chakra-ui/react';
 
-export const NavBar = () =>
-{
-    return (
+export const NavBar = () => {
+  return (
+    <Box>
+      <Flex p={4} justify='space-between' alignItems='center' shadow='md'>
         <Box>
-            <Flex p={4} justify='space-between' alignItems='center' shadow='md'>
-                <Box>
-                    {/* <Image src='/logo.png' alt='logo' height={50} /> */}
-                    <Text fontSize='2xl' color='blue.600' fontWeight='black' >MFT Browser</Text>
-                </Box>
-
-                <Flex gap={6} color='blue.600' fontWeight='bold' >
-                    <Link href='/' _hover={{
-                        color: 'blue.700'
-                    }}>Home</Link>
-    
-                    <Link href='/install-apache-airavata' _hover={{
-                        color: 'blue.700'
-                    }}>Install Apache Airavata</Link>
-    
-                    <Link href='/list-storages' _hover={{
-                        color: 'blue.700'
-                    }}>List Storages</Link>
-
-                    <Link href='/add-storage' _hover={{
-                        color: 'blue.700'
-                    }}>Add Storage</Link>
-
-                </Flex>
-            </Flex>
+          <Heading fontWeight='black' fontSize='2xl' color='#f8ab9d' textAlign='center'>
+            Apache<Text as='span' color='#5dcbee'>Airavata</Text>
+          </Heading>
         </Box>
-    );
+
+        <Flex gap={6} color='#2E4660' fontWeight='bold' css={{
+          '& > *': {
+            transition: 'font-weight 0.3s ease-in-out',
+          },
+          '& > *:hover': {
+            fontWeight: 'extrabold',
+          },
+        }}>
+          <Link href='/'>Home</Link>
+          <Link href='/install-apache-airavata'>Installation</Link>
+          <Link href='/list-storages'>List Storages</Link>
+          <Link href='/add-storage'>Add Storage</Link>
+        </Flex>
+      </Flex>
+    </Box>
+  );
 };
