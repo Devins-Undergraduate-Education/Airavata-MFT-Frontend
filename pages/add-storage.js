@@ -1,27 +1,15 @@
 
-import { useEffect, useState } from 'react';
-import { Field, FieldArray, Form, Formik } from 'formik';
+import { useState } from 'react';
+import { Field, Form, Formik } from 'formik';
 
 import
 {
-    Button, Text, Table,
-    Alert,
-    AlertIcon,
+    Button,
     Heading,
     Container,
-    Badge,
     Flex,
-    Modal,
-    ModalOverlay,
-    ModalContent,
-    ModalHeader,
-    ModalFooter,
-    ModalBody,
-    ModalCloseButton,
     FormControl,
     FormLabel,
-    FormErrorMessage,
-    FormHelperText,
     Input,
     SimpleGrid,
     Tabs, TabList, TabPanels, Tab, TabPanel,
@@ -42,10 +30,10 @@ export default function AddStorage()
             <Container maxW='container.2xl' p={4}>
 
                 <Flex justify='space-between' alignItems='center'>
-                    <Heading color='blue.600' size='lg'>Add Storage</Heading>
+                    <Heading color='#2E4660' size='lg'>Add Storage</Heading>
 
-                    <Button bg='blue.400' size='sm' color='white' _hover={{
-                        bg: 'blue.600'
+                    <Button bg='#496F97' size='sm' color='white' _hover={{
+                        bg: '#2E4660'
                     }} as='a' href='/list-storages'>Back to List Storage</Button>
                 </Flex>
 
