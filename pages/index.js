@@ -1,9 +1,7 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 import { useEffect } from 'react';
 import
 {
-  Box, Link, Heading, Container, Text
+  Box, Heading, Container, Text
 } from '@chakra-ui/react';
 
 import { NavBar } from '../components/NavBar';
@@ -27,27 +25,34 @@ export default function Home()
     <>
       <NavBar />
 
-
       <Container maxW='container.2xl' p={4}>
-        <Box textAlign='center' maxW='600px' mx='auto'>
-          <Heading fontWeight='black' fontSize='5xl'>
-            Airavata MFT <Text as='span' color='darkgreen'>Browser</Text>
+        <Box textAlign='justify' maxW='700px' mx='auto'>
+          <Heading fontWeight='black' fontSize='5xl' color = '#f8ab9d' textAlign='center'>
+            Apache<Text as='span' color='#5dcbee'>Airavata</Text>
           </Heading>
 
-          <Text mt={4}> Welcome to a local application of Apache Airavata Managed File Transfers. This application allows users to interact with MFT and </Text>
+          <Text mt={4}> Welcome to a local application of Apache Airavata Managed File Transfers. This application allows users to interact with MFT by displaying storages directly from MFT. Future functionalities to come!</Text>
 
-          <Text fontSize='lg' fontWeight='bold' mt={8}>How It Works</Text>
-          <Text>This application was written by Devin, Sagor, and Ameerah to permit users to navigate through files in MFT storages. The application combines both a frontend which creates a graphical interface that is functional and easy to use along with the backend which creates a connection between your local system and the application. The backend was inspired by the work and contributions of Ganning Xi and Dimuthu Wannipurage.  </Text>
+          <Text fontSize='lg' fontWeight='bold' mt={8}>What is Apache Airavata?</Text>
+          <Text>Apache Airavata, developed by the Apache Software Foundation, manages and executes computational tasks and workflows across distributed resources like HPC clusters and cloud platforms. It offers workflow creation and management, resource integration, job submission and monitoring, data management, collaboration support, and robust security features.  </Text>
 
-          <Text fontSize='lg' fontWeight='bold' mt={8}>Features</Text>
-          <Text>Right now, you can list storages, view files within them, and browse through those files. However, adding storages, moving or copying files, and downloading files are still in progress.</Text>
+          <Text fontSize='lg' fontWeight='bold' mt={8}>What can this UI do?</Text>
+          <Text>This UI is able to list storages, view files within the invidual storage, and browse through the files in the storages. Furthermore, a step-by-step guide is included to ensure users are able to confidently deploy MFT. </Text>
+
+          <Text fontSize='lg' fontWeight='bold' mt={8}>How does this work?</Text>
+          <Text>This application combines a frontend and a backend to ultimately create what you are looking at now. The frontend creates a graphical interface that is functional and allows ease-of-use. The backend creates a connection layer between your local system and the MFT server, allowing for your computer to basically talk to MFT though this UI.</Text>
+
+          <Text fontSize='lg' fontWeight='bold' mt={8}>What's next?</Text>
+          <Text>There's a lot more work to do! Progress is still being made to allow users to properly add storages, move files, copy files, and download files. If you would like to contribute, please check out the Apache Airavata GitHub!</Text>
+
+          <Text fontSize='lg' fontWeight='bold' mt={8}>Who contributed to this project?</Text>
+          <Text>This application was headed by Devin Fromond, Sagor Levy, and Ameerah Mourad. The backend of this UI was inspired by the work and contributions of Ganning Xu and Dimuthu Wannipurage.</Text>
 
 
           {/* <Button as='a' href='/list-storages' colorScheme='darkgreen' mt={4}>Get Started</Button> */}
         </Box>
 
       </Container >
-
 
     </>
   );
