@@ -22,14 +22,14 @@ export default function InstallApacheAiravata() {
                 </Flex>
                 <Tabs mt={8} variant='unstyled'>
                     <TabList>
-                        <Tab rounded='md' _selected={{ color: 'white', bg: 'orange.500' }}>Windows</Tab>
-                        <Tab rounded='md' _selected={{ color: 'white', bg: 'green.400' }}>Linux / MacOS</Tab>
+                        <Tab rounded='md' _selected={{ color: 'white', bg: '#7B506F' }}>Windows</Tab>
+                        <Tab rounded='md' _selected={{ color: 'white', bg: '#6957B2' }}>Linux / MacOS</Tab>
                     </TabList>
                     <TabPanels>
-                        <TabPanel bg='orange.50' p={4} rounded='md'>
+                        <TabPanel bg='#E7DAE3' p={4} rounded='md'>
                             <Windows />
                         </TabPanel>
-                        <TabPanel bg='green.50' p={4} rounded='md'>
+                        <TabPanel bg='#E6E3F2' p={4} rounded='md'>
                             <LinuxMacOS />
                         </TabPanel>
                     </TabPanels>
